@@ -1,0 +1,166 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Documentation</title>
+  </head>
+  <body>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>
+          <h1>Introduction</h1>
+        </header>
+          <p>Hyper Text Markup Language, or simply HTML, is a standard markup language for Web pages. It's used to describe the structure of Webpages. It's a very simple language to learn and a good way to start for those who are giving the first steps in the technology area. </p>
+          <p>The syntax of HTML consists in elements that wrap pieces of content. Those are called tags:
+            <code>
+              <ul class="unbullet">
+                <li><span class="tag">&lt;b&gt;<b>bold</b>&lt;/b&gt;</span></li>
+                <li><span class="tag">&lt;i&gt;<i>italic</i>&lt;/i&gt;</span></li>
+                <li><span class="tag">&lt;i&gt;<u>underline</u>&lt;/i&gt;</span></li>
+              </ul>
+            </code>
+          </p>
+          <p>We'll se other examples in this documentation.</p>
+      </section>
+
+      <section class="main-section" id="The_Basics">
+        <header>
+          <h1>The Basics</h1>
+        </header>
+          <p>All HTML document should start with an instruction that states it's a HTML file:</p>
+            <code>&lt;!DOCTYPE html&gt;</code>
+          <p>Note that there is a ! in the beginning of the information inside the tags. This sign indicates a comment. This means that only the browser and developers can see this. It'll not appear in the Webpage.</p>
+          <p>Other essencial tags a HTML code should have:</p>
+          <ul class="unbullet">
+            <code>
+            <li><span class="tag">&lt;link rel="stylesheet" href="css_sheet"&gt;</span> - tell the browser where to look for instructions for the page's style</li>
+            <li><span class="tag">&lt;meta&gt;</span> - adds information about metadata within the HTML document</li>
+            <li><span class="tag">&lt;body&gt;&lt;/body&gt;</span> - encloses all the contents of the HTM document</li>
+            </code>
+          </ul>
+          <p>There are other important tags in a HTML document, but those were just a few examples of what we can expect to find on the Websites we usually visit.</p>
+      </section>
+
+      <section class="main-section" id="Headings">
+        <header>
+          <h1>Headings</h1>
+        </header>
+          <p>Headigns on HTML goes from 1 (the biggest) to 6 (the smallest). In the beginning, it seems a little weird - how come 1 is bigger than 6? But it helps if we think about it as a ranking, where 1 representes the most important heading, and 6, the last one.</p>
+            <code>
+              <ul class="unbullet">
+                <li><h1>Heading 1</h1></li>
+                <li><h2>Heading 2</h2></li>
+                <li><h3>Heading 3</h3></li>
+                <li><h4>Heading 4</h4></li>
+                <li><h5>Heading 5</h5></li>
+                <li><h6>Heading 6</h6></li>
+              </ul>
+            </code>
+          <p>Headings are great for organizing the content of the Website and showing the search engines what is most important in the page. If you want to learn more about that, you may be interested in looking for some information on SEO.</p>          
+      </section>
+      
+      <section class="main-section" id="One_Step_Ahead">
+        <header>
+          <h1>One Step Ahead</h1>
+        </header>
+          <p>HTML alone is not able to give a Webpage some style. It only works as the structure behind that beautiful website we're intending to build. So, how do we give it a some styling?</p>
+          <p>To do that, we'll have to go a little further in our studies and use another tool: CSS. CSS will let us make that website more appealing, interesting and assessible. We can add CSS instructions to a HTML document in 3 ways:</p>
+         <ul>
+            <code>
+            <li>style atribute - the instruction is added directly to the tag inside it, with the style atribute</li>
+            <li><span class="tag">&lt;style&gt;</span> element - the instruction is added with a pair of tags of style</li>
+            <li><span class="tag">&lt;link&gt;</span> element - all the CSS instructions for a HTML document are created in a separate document, which is acessed but the HTML document through a <span class="tag">&lt;link&gt;</span> element</li>
+            </code>
+          </ul>
+      </section>
+      
+      <section class="main-section" id="Source">
+        <header>
+          <h1>Source</h1>
+        </header>
+          <p>This was just a simple explanation of what can be one with HTML. There are much more out there to be discovered, and things change a lot everyday.</p>
+          <p>Some good places to explore and keep learning:</p>
+          <ul>
+            <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a> - a really friendly place for people of all levels to learn with hands-on activities.</li>
+            <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a> - a huge repository of documentations and exercises to test what we've been learning</li>
+            <li><a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a> - they provide real life challanges for practice and create a portfolio</li>
+          </ul>
+            <p>Many thanks to all of them for providing such a rich knowledge base.</p>
+      </section>
+    </main>
+
+    <nav id="navbar">
+      <ul class="nav-bar">
+        <header><h1>HTML Documentation</h1></header>
+        <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+        <li><a href="#The_Basics" class="nav-link">The Basics</a></li>
+        <li><a href="#Headings" class="nav-link">Headings</a></li>
+        <li><a href="#One_Step_Ahead" class="nav-link">One Step Ahead</a></li>
+        <li><a href="#Source" class="nav-link">Source</a></li>
+      </ul>
+    </nav>   
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+#main-doc {
+ margin-top: 0;
+ margin-left: 30%;
+ padding: 10px;
+}
+
+body {
+  background-color: #e6f2ff;
+  color: #0059b3;
+  margin: 0;
+  padding: 0;
+}
+
+.tag {
+  color: #990099;
+}
+
+.unbullet {
+  list-style-type: none;
+}
+
+.nav-bar {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  width: 20%;
+  height: 100%;
+  background-color: #cce6ff;
+  border: 1px outset; 
+  overflow: auto;
+  word-wrap: break-word;
+}
+
+.nav-bar a {
+  text-decoration: none;
+}
+
+.nav-bar a:hover {
+  background-color: #0080ff;
+  color: white;
+} 
+
+** end of undefined **
+
