@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" />
   </head>
-  <header class="hermes_ph" id="header">
+  <header class="hermes-ph" id="header">
     <div class="logo">
           <!-- Logo -->
           <img src="https://images.pexels.com/photos/114977/pexels-photo-114977.jpeg"
@@ -19,17 +19,17 @@
           class="hph-img"
           id="header-img"
           />
+          <span class="header-title">Hermes<br>Pubhishing<br>House</span>
     </div>
-    <nav id="nav-bar">
-      <!-- Tem que ficar no topo da página, fixo. -->
-      <h1 class="header-title">Hermes Pubhishing House</h1>
-      <ul>
-        <li><a href="#who-we-are" class="nav-link">Who we are</a></li>
-        <li><a href="#our-services" class="nav-link">Our services</a></li>
-        <li><a href="#hall-of-fame" class="nav-link">Hall of Fame</a></li>
-      </ul>
-    </nav>
-          
+    <div class="menu">
+      <nav id="nav-bar">
+        <ul class="top-menu">
+          <li><a href="#who-we-are" class="nav-link">Who we are</a></li>
+          <li><a href="#our-services" class="nav-link">Our services</a></li>
+          <li><a href="#hall-of-fame" class="nav-link">Hall of Fame</a></li>
+        </ul>
+      </nav>
+    </div>          
   </header>
   <body>
     <main>
@@ -41,28 +41,41 @@
       <hr>
       <section class="services" id="our-services">
         <h2>Our Services</h2>
-      <p><ul>
-          <li>Proofreading</li>
-          <li>Cover design</li>
-          <li>Printing</li>
-        </ul>
-      </p>
-      <p>Leave your email for a free quotation:
-        <form id="form" acton="https://www.freecodecamp.com/email-submit">
-          <fieldset>
-            <label for="email">Email: </label> <input id="email" type="email" name="email" placeholder="Enter your email" required/>
-            <input id="submit" type="submit" value="Submit" action="https://www.freecodecamp.com/email-submit"/>
-          </fieldset>
-        </form>
-      </p>
+        <div class="services-boxes">
+          <span class="text-box">
+            <h3>Proofreading</h3>
+            <p>We proofread your book and make the text read to publish.</p>
+          </span>
+          <span class="text-box">
+            <h3>Cover design</h3>
+            <p>We match the best designer to the style of your book, so you can have a killer cover for your book.</p>
+          </span>
+          <span class="text-box">
+            <h3>Printing</h3>
+            <p>We'll do all the paperwork to have your book printed and delivered at your door.</p>
+          </span>
+        </div>
       </section>
       <hr>
-      <section class="hofame" id="hall-of-fame">
+      <section class="contact">
+        <h2>Contact</h2>
+        <p>Leave your email for a free quotation:
+          <form id="form" class="form" action="https://www.freecodecamp.com/email-submit">
+            <fieldset>
+              <label for="email">Email: </label> <input id="email" type="email" name="email" placeholder="Enter your email" required/>
+              <input id="submit" class="submit-buttom" type="submit" value="Submit"/>
+            </fieldset>
+          </form>
+        </p>
+      </section>
+      <hr>
+      <section class="hall-of-fame" id="hall-of-fame">
         <h2>Hall of Fame</h2>
         <p>We are proud to announce the authors who have trusted in our services.</p>
-        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/edtNX_g0fUg?si=3AJDiAB3sjB2lHMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="video"></iframe>
+        <p class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/edtNX_g0fUg?si=3AJDiAB3sjB2lHMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="video"></iframe>
         </p>
       </section>
       <hr>
     </main>
   </body>
+</html>

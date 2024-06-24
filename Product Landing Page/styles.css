@@ -1,17 +1,69 @@
 * {
-  background-color: black;
-  color: white;
+  background-color: #e0b1cb;
+  color: #5e548e;
 }
 
-.hermes_ph {
-  background-color: blue;
-  list-style: none;
-  padding: 0;
+
+/*General style*/
+ul {
+  list-style-type: none;
+  font-family: 'Montserrat'
+}
+
+a {
+  color: #231942;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #9f86c0;
+}
+
+h1 {
+  font-family: 'Montserrat';
+}
+
+h2, h3 {
+  font-family: 'Lora';
+  padding: 5px;
+}
+
+p {
+  font-family: 'Montserrat';
+  padding: 5px;
+}
+
+hr {
+  width: 30%;
+}
+
+section {
+  padding: 10px;
+}
+
+/*Header style*/
+.hermes-ph {
+  height: 10%;
   display: flex;
+  flex-flow: row wrap;
   position: fixed;
-  top: 0;
+  width: 100%;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-between;  
+}
 
+.logo {
+  display: flex;
+  flex-flow: row wrap;
+}
 
+.top-menu {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  align-items: center;
+  gap: 20px;
 }
 
 .header-title {
@@ -21,45 +73,62 @@
   top: 10px;
 }
 
-ul {
-  list-style-type: none;
-  display: flex;
-}
-
-a {
-  color: pink;
-}
-
-
 .hph-img {
   width: 20%;
   height: auto;
 }
 
+/*Main style*/
 main{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
+  padding: 10%;
 }
 
-hr {
-  width: 30%;
+/*Our Services style*/
+.services-boxes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 10%;
 }
 
-.nav-bar {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  list-style-type: none;
-  margin: 0;
-  padding: 10px;
-  width: 20%;
-  height: 100%;
-  background-color: #cce6ff;
-  border: 1px outset; 
-  overflow: auto;
-  word-wrap: break-word;
+.text-box{
+  background-color: #be95c4;
+  text-align: center;
+  justify-content: center;
+  border-style: solid;
+  padding: 0 20px 0 20px;
+  flex: 1;
+  align-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Montserrat';
+}
+
+/*Contact style*/
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+#email {
+  width: 200px;
+}
+
+.submit-buttom {
+ background-color: #be95c4;
+ border-color: navy;
+ color: navy;
+ padding: 5px 10px
+}
+
+/*Contact style*/
+.video {
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 320px) {
