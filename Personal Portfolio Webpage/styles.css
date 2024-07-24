@@ -1,7 +1,71 @@
-#navbar {
-    position: fixed;
+/**header**/
+header {
+    background-color: brown;
+    color: aliceblue;
+    width: 100vh;
+    padding: 0 0 10vh 100vh;
 }
 
-#welcome-section{
-    height: vp;
+.navbar {
+    position: fixed;
+    height: 10vh;
+    width: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/**Welcome section**/
+.welcome-section{
+    position: fixed;
+    background-color: black;
+    color: aliceblue;
+    height: 100vh;
+}
+
+
+/**Projects**/
+.projects {
+    position: fixed;
+    background-color: rgb(101, 101, 176);
+    color: beige;
+}
+
+/**Contact info**/
+.contact-info{
+    position: fixed;
+    background-color: black;
+    color: aliceblue;
+}
+
+/**Footer**/
+footer {
+    display: flex;
+    flex: row;
+    align-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: aliceblue;
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-top-color: red;
+    padding: 20px 40px;
 }
