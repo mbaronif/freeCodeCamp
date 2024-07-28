@@ -1,20 +1,31 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 /**header**/
 header {
+    display: flex;
+    justify-content: space-between;
+    /*position: fixed;*/
+    height: 10vh;
+    width: 100%;
+    margin-left: auto;
     background-color: brown;
     color: aliceblue;
-    width: 100vh;
-    padding: 0 0 10vh 100vh;
 }
 
 .navbar {
-    position: fixed;
+    display:flex;
+    margin-left: auto;
     height: 10vh;
     width: 100vh;
-    display: flex;
     flex-direction: row;
     align-content: space-around;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    padding-right: 5vh;
 }
 
 ul {
@@ -32,25 +43,32 @@ a {
     color: aliceblue;
 }
 
+
 /**Welcome section**/
 .welcome-section{
-    position: fixed;
     background-color: black;
     color: aliceblue;
     height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+p {
+    font-style: italic;
 }
 
 
 /**Projects**/
 .projects {
-    position: fixed;
     background-color: rgb(101, 101, 176);
     color: beige;
 }
 
 /**Contact info**/
 .contact-info{
-    position: fixed;
     background-color: black;
     color: aliceblue;
 }
