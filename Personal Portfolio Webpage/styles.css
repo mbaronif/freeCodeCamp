@@ -65,12 +65,48 @@ p {
 .projects {
     background-color: rgb(101, 101, 176);
     color: beige;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /**Contact info**/
-.contact-info{
-    background-color: black;
+.contact-info {
+    background-color: blue;
     color: aliceblue;
+    height: 75vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.info-header {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-media {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+.img-subtitle {
+    font-size: 30px;
+    font-size: x-large;
 }
 
 /**Footer**/
