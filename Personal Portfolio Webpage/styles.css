@@ -12,20 +12,21 @@ header {
     height: 10vh;
     width: 100%;
     margin-left: auto;
-    background-color: brown;
-    color: aliceblue;
+    background-color: #b9faf8;
+    color: #6f2dbd;
+    position: fixed;
 }
 
 .navbar {
     display:flex;
     margin-left: auto;
     height: 10vh;
-    width: 100vh;
+    width: 100%;
     flex-direction: row;
     align-content: space-around;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 5vh;
+    position: fixed;
 }
 
 ul {
@@ -35,19 +36,25 @@ ul {
     align-content: space-between;
     align-items: center;
     justify-content: flex-end;
-    gap: 10px;
+    gap: 30px;
+    padding: 5vw;
 }
 
-a {
+.navbar a {
     text-decoration: none;
-    color: aliceblue;
+    color: #6f2dbd;
+}
+
+.navbar a:hover {
+    background-color: #b8d0eb;
+    color: #b9faf8;
 }
 
 
 /**Welcome section**/
 .welcome-section{
-    background-color: black;
-    color: aliceblue;
+    background-color: #6f2dbd;
+    color: #b9faf8;
     height: 100vh;
     display: flex;
     flex-flow: column;
@@ -63,8 +70,8 @@ p {
 
 /**Projects**/
 .projects {
-    background-color: rgb(101, 101, 176);
-    color: beige;
+    background-color: #b298dc;
+    color: #b9faf8;
     padding: 50px;
     display: flex;
     flex-flow: column;
@@ -84,6 +91,7 @@ p {
     display: grid;
     gap: 50px;
     padding: 20px;
+    background-color: #b8d0eb;
 }
 
 @media (min-width: 600px) {
@@ -109,16 +117,25 @@ p {
 .project-title {
     padding: 15px;
     text-align: center;
-    background-color: gray;
+/*    background-color: #b8d0eb;*/
    
 }
 
+.projects a {
+    text-decoration: none;
+    color: #6f2dbd;
+}
+
+.projects a:hover {
+    background-color: #b298dc;
+    color:#b9faf8;
+}
 
 
 /**Contact info**/
 .contact-info {
-    background-color: blue;
-    color: aliceblue;
+    background-color: #6f2dbd;
+    color: #b9faf8;
     height: 75vh;
     display: flex;
     flex-flow: column;
@@ -153,6 +170,16 @@ p {
     font-size: x-large;
 }
 
+.contact-info a {
+    text-decoration: none;
+    color: #b9faf8;
+}
+
+.contact-info a:hover {
+    background-color: #b298dc;
+    color:#6f2dbd;
+}
+
 /**Footer**/
 footer {
     display: flex;
@@ -160,10 +187,18 @@ footer {
     align-content: space-around;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
-    color: aliceblue;
+    background-color: #b8d0eb;
+    color: #6f2dbd;
     border-top-style: solid;
     border-top-width: 5px;
-    border-top-color: red;
+    border-top-color: #b9faf8;
     padding: 20px 40px;
 }
+
+/*Color pallet:
+#6f2dbd
+#a663cc
+#b298dc
+#b8d0eb
+#b9faf8
+*/
